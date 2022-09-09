@@ -1,35 +1,18 @@
 #include <stdio.h>
 
-
-
 /**
+ * main - a simple program that outputs the lowercase alphabet
  *
- *  * main - a simple program that outputs the lowercase alphabet
- *
- *   *
- *
- *    * Return: 0 on success
- *
- *     */
-
+ * Return: 0 on success
+ */
 int main(void)
-
 {
+	char alpha = '0';
+	int i;
 
-		char alpha = '0';
+	for (i = 0; i < 10; i++, alpha++)
+		putchar(alpha);
+	putchar('\n');
 
-			int i;
-
-
-
-				for (i = 0; i < 10; i++, alpha++)
-
-							putchar(alpha);
-
-					putchar('\n');
-
-
-
-						return (0);
-
+	return (0);
 }
