@@ -1,18 +1,15 @@
-#include<stdio.h>
-#include "main.h"
+#include"main.h"
 
 /**
- * print_alphabet - entry point
- * Description: 'Prints the alphabet with _putchar'
- * Return: Always 0 (Success)
- */
+ * print_alphabet - utilizes on the _putchar function to print
+ *                 the alphabet a - z
+*/
 
-void print_alphabet(void);
-
+void print_alphabet(void)
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
-{	_putchar(c);
-	}
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ++ch)
+		_putchar(ch);
 	_putchar('\n');
 }
